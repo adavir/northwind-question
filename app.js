@@ -23,10 +23,13 @@ Promise.all([territories]).then(function(data){
 
   var csv = json2csv({ data: territories, fields: ["TerritoryDescription","OrderCount"] });
 
-  fs.writeFile('csvFile.csv', csv);
-  console.log("Complete");
+  fs.writeFile('csvFile.csv', csv, function(err){
+    
+    console.log("Complete");
+    process.exit(0)
+  });
+    
 
-  process.exit(0)
 
 }).catch(function(ex){
   console.log(ex);
