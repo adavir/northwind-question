@@ -1,0 +1,24 @@
+{
+  "name": "paul",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "http": "^0.0.0",
+    "json2csv": "^3.11.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adavir/northwind-question.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adavir/northwind-question/issues"
+  },
+  "homepage": "https://github.com/adavir/northwind-question#readme"
+}
