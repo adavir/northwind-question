@@ -25,6 +25,10 @@ Promise.all([territories]).then(function(data){
 
   fs.writeFile('csvFile.csv', csv);
   console.log("Complete");
+
+  process.exit(0)
+
 }).catch(function(ex){
   console.log(ex);
+  process.exit(0)
 });

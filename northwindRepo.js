@@ -17,6 +17,7 @@ northwindRepo.getTerritories = function (expand, select) {
 
         console.log("Querying Service " + thisUrl);
         rest.get(thisUrl).then(function (data) {
+            // TODO, put some recordsetting in here
             fullfil(data.value);
         }
         ).catch(reject);
